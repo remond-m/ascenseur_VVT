@@ -3,13 +3,12 @@ class User
 {
 public:
 	User(int level, bool direction, int destination);
-	void Call();
-	void Pushbutton(bool doorbutton);
-	void PushDestination();
-	void SetDestination(int destination);
-	void Setlevel(int level);
-	void Enter();
-	void Leave();
+	void call();
+	void pushbutton(bool doorbutton);
+	void pushDestination();
+	void setDestination(int destination);
+	void setlevel(int level);
+	void setDirection(bool direction);
 	~User();
 
 private:

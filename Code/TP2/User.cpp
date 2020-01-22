@@ -15,20 +15,37 @@ User::~User()
 }
 
 
-void User::Call()
+void User::call()
 {
 	//appel fonction ascenseur avec level et direction
 }
 
-void User::Pushbutton(bool doorbutton)
+void User::pushbutton(bool doorbutton)
 {
-	if (doorbutton) {//appel fonction porte ouverture
+	if (doorbutton) {//Door.opendoor();
+		//appel fonction porte ouverture 
 	
-	}else { //appel fonction porte fermeture
+	}else { //Door.closedoor()
+		//appel fonction porte fermeture
 	}
 }
 
-void User::PushDestination()
+void User::pushDestination()
 {
 	//press destination button
+}
+
+void User::setDestination(int destination)
+{
+	_destination = destination;
+}
+
+void User::setlevel(int level)
+{
+	_level = level;
+}
+
+void User::setDirection(bool direction)
+{
+	_direction = direction;
 }
