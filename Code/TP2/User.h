@@ -2,7 +2,7 @@
 class User
 {
 public:
-	User(int level, bool direction, int destination);
+	User(int level, bool direction, int destination, Door door);
 	void call();
 	void pushbutton(bool doorbutton);
 	void pushDestination();
@@ -15,6 +15,7 @@ private:
 	int _level;
 	bool _direction;
 	int _destination;
+	Door _door;
 };
 
 

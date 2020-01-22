@@ -25,6 +25,7 @@
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
     <ClInclude Include="Elevator.h">
+    <ClInclude Include="Door.h">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
@@ -39,6 +40,7 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
     <ClCompile Include="Elevator.cpp">
+    <ClCompile Include="Door.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

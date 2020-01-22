@@ -1,12 +1,14 @@
 #include "pch.h"
 #include "User.h"
+#include "Door.h"
 
 
-User::User(int level, bool direction, int destination)
+User::User(int level, bool direction, int destination, Door door)
 {
 	_level = level;
 	_direction = direction;
 	_destination = destination;
+	_door = door;
 }
 
 
@@ -22,10 +24,12 @@ void User::call()
 
 void User::pushbutton(bool doorbutton)
 {
-	if (doorbutton) {//Door.opendoor();
+	if (doorbutton) {
+		_door.openDoor();
 		//appel fonction porte ouverture 
 	
-	}else { //Door.closedoor()
+	}else { 
+		_door.closeDoor();
 		//appel fonction porte fermeture
 	}
 }
