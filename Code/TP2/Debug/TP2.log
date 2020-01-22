@@ -1,0 +1,3 @@
+﻿  pch.cpp
+  TP2.cpp
+LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'gtest.lib'
