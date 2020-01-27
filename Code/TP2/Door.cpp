@@ -1,6 +1,12 @@
 #include "pch.h"
 #include "Door.h"
+#include <time.h>
 
+Door::Door()
+{
+	_floor = 0;
+	_state_open = false;
+}
 
 Door::Door(int floor)
 {
@@ -15,7 +21,13 @@ bool Door::isElevatorPresent(int elevator_floor)
 
 void Door::waitBeforeClose(int delay)
 {
-	//wait(delay)
+	time_t start_time = 0;
+	time_t current_time = 0;
+
+	start_time = time(NULL);
+	while (current_time - start_time + 1 <= delay) {
+		current_time = time(NULL);
+	}
 }
 
 void Door::openDoor()
@@ -32,6 +44,11 @@ void Door::closeDoor()
 void Door::allowDeparture()
 {
 	//Elevator.setOKToGo();
+}
+
+bool Door::isOpen()
+{
+	return _state_open;
 }
 
 Door::~Door()

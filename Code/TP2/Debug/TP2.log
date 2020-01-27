@@ -1,3 +1,17 @@
 ﻿  pch.cpp
+  Elevator.cpp
+  Door.cpp
   TP2.cpp
-LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'gtest.lib'
+  User.cpp
+h:\validation-test\project_elevator\ascenseur_vvt\code\tp2\user.h(5): error C2061: erreur de syntaxe : identificateur 'Door'
+h:\validation-test\project_elevator\ascenseur_vvt\code\tp2\user.h(18): error C3646: '_door' : spécificateur de substitution inconnu
+h:\validation-test\project_elevator\ascenseur_vvt\code\tp2\user.h(18): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+h:\validation-test\project_elevator\ascenseur_vvt\code\tp2\user.cpp(7): error C2511: 'User::User(int,bool,int,Door)' : impossible de trouver la fonction membre surchargée dans 'User'
+  h:\validation-test\project_elevator\ascenseur_vvt\code\tp2\user.h(2): note: voir la déclaration de 'User'
+h:\validation-test\project_elevator\ascenseur_vvt\code\tp2\user.cpp(8): error C2597: référence non conforme à un membre non static 'User::_level'
+h:\validation-test\project_elevator\ascenseur_vvt\code\tp2\user.cpp(9): error C2597: référence non conforme à un membre non static 'User::_direction'
+h:\validation-test\project_elevator\ascenseur_vvt\code\tp2\user.cpp(10): error C2597: référence non conforme à un membre non static 'User::_destination'
+h:\validation-test\project_elevator\ascenseur_vvt\code\tp2\user.cpp(11): error C2065: '_door' : identificateur non déclaré
+h:\validation-test\project_elevator\ascenseur_vvt\code\tp2\user.cpp(28): error C2065: '_door' : identificateur non déclaré
+h:\validation-test\project_elevator\ascenseur_vvt\code\tp2\user.cpp(32): error C2065: '_door' : identificateur non déclaré
+  Génération de code en cours...

@@ -2,20 +2,17 @@
 class User
 {
 public:
-	User(int level, bool direction, int destination, Door door);
-	void call();
-	void pushbutton(bool doorbutton);
-	void pushDestination();
+	User(int level, int destination);
+	int getLevel();
+	void callElevator();
 	void setDestination(int destination);
 	void setlevel(int level);
-	void setDirection(bool direction);
 	~User();
 
 private:
 	int _level;
-	bool _direction;
+	bool _call;
 	int _destination;
-	Door _door;
 };
 
 

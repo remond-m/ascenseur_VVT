@@ -4,6 +4,8 @@
 #include "pch.h"
 #include <iostream>
 #include "TP2.h"
+#include "Door.h"
+#include "User.h"
 
 #include "gtest\gtest.h"
 
@@ -44,9 +46,10 @@ bool test(int tab[], int length, int oracle[], int numTest) {
 	return true;
 }
 
-TEST(groupe1, scenario2)
+TEST(DoorGroupe, scenario1)
 {
-
+	Door door1(2);
+	ASSERT_EQ(door1.isOpen(), false);
 }
 
 
@@ -55,36 +58,6 @@ int main()
 	testing::InitGoogleTest();
 
 	RUN_ALL_TESTS();
-	
-	//TEST1 classic tab
-	int num1[] = { 0,2,1 };
-	int oracle1[] = { 2,1,0 };
-	int length = sizeof(num1) / sizeof(int);
-	test(num1, length, oracle1, 1);
-
-	//TEST2 empty tab
-	int num2[1];
-	int oracle2[1];
-	length = sizeof(num2) / sizeof(int);
-	test(num2, length, oracle2, 2);
-
-	//TEST3 tab with positive and negative elements
-	int num3[] = { -2,100000,0 };
-	int oracle3[] = { 100000,0,-2 };
-	length = sizeof(num3) / sizeof(int);
-	test(num3, length, oracle3, 3);
-
-	//TEST4 only one element
-	int num4[] = { 23 };
-	int oracle4[] = { 23 };
-	length = sizeof(num4) / sizeof(int);
-	test(num4, length, oracle4, 4);
-
-	//TEST5 2 tab containing 2 identical elements 
-	int num5[] = { 32, 4, 32, 6 };
-	int oracle5[] = { 32, 32, 6, 4 };
-	length = sizeof(num5) / sizeof(int);
-	test(num5, length, oracle5, 5);
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage

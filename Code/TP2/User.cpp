@@ -1,42 +1,20 @@
 #include "pch.h"
 #include "User.h"
 #include "Door.h"
+#include "Systeme.h"
 
 
-User::User(int level, bool direction, int destination, Door door)
+User::User(int level, int destination)
 {
 	_level = level;
-	_direction = direction;
+	_call = false;
 	_destination = destination;
-	_door = door;
 }
 
-
-User::~User()
+void User::callElevator()
 {
-}
-
-
-void User::call()
-{
+	_call = true;
 	//appel fonction ascenseur avec level et direction
-}
-
-void User::pushbutton(bool doorbutton)
-{
-	if (doorbutton) {
-		_door.openDoor();
-		//appel fonction porte ouverture 
-	
-	}else { 
-		_door.closeDoor();
-		//appel fonction porte fermeture
-	}
-}
-
-void User::pushDestination()
-{
-	//press destination button
 }
 
 void User::setDestination(int destination)
@@ -49,7 +27,11 @@ void User::setlevel(int level)
 	_level = level;
 }
 
-void User::setDirection(bool direction)
+int User::getLevel()
 {
-	_direction = direction;
+	return _level;
+}
+
+User::~User()
+{
 }
