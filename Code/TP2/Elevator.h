@@ -6,15 +6,21 @@ using namespace std;
 class Elevator
 {
 public:
-	Elevator();
-	void goup();
-	void godown();
+	Elevator(int level);
+	void go_up();
+	void go_down();
 	void stop();
+	void setDestination(int destination);
+	void setCall(int levelcall);
+	int getLevel();
+	vector<int> getdestination();
+	vector<int> getcall();
+
 	~Elevator();
 private:
-	int level;
-	int direction;
-	vector<int> destination;
-	vector<int> callelevator;
+	int _level;
+	int _direction;
+	vector<int> _destination;
+	vector<int> _call;
 };
 

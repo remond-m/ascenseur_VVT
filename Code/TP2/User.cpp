@@ -1,14 +1,15 @@
 #include "pch.h"
 #include "User.h"
 #include "Door.h"
+#include "Elevator.h"
 
-
-User::User(int level, bool direction, int destination, Door door)
+User::User(int level, bool direction, int destination, Door door,Elevator elev)
 {
 	_level = level;
 	_direction = direction;
 	_destination = destination;
 	_door = door;
+	_elev = elev;
 }
 
 
@@ -20,6 +21,7 @@ User::~User()
 void User::call()
 {
 	//appel fonction ascenseur avec level et direction
+	_elev.setCall(_level);
 }
 
 void User::pushbutton(bool doorbutton)
@@ -36,7 +38,7 @@ void User::pushbutton(bool doorbutton)
 
 void User::pushDestination()
 {
-	//press destination button
+	setDestination(_destination);
 }
 
 void User::setDestination(int destination)

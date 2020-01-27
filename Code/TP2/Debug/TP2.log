@@ -1,3 +1,9 @@
-﻿  pch.cpp
+﻿  Elevator.cpp
   TP2.cpp
-LINK : fatal error LNK1104: impossible d'ouvrir le fichier 'gtest.lib'
+h:\ascenseur\ascenseur_vvt\code\tp2\tp2.cpp(8): fatal error C1083: Impossible d'ouvrir le fichier include : 'gtest\gtest.h' : No such file or directory
+  User.cpp
+h:\ascenseur\ascenseur_vvt\code\tp2\user.cpp(7): error C2512: 'Door' : aucun constructeur par défaut approprié disponible
+  h:\ascenseur\ascenseur_vvt\code\tp2\door.h(2): note: voir la déclaration de 'Door'
+h:\ascenseur\ascenseur_vvt\code\tp2\user.cpp(7): error C2512: 'Elevator' : aucun constructeur par défaut approprié disponible
+  h:\ascenseur\ascenseur_vvt\code\tp2\elevator.h(6): note: voir la déclaration de 'Elevator'
+  Génération de code en cours...
