@@ -16,11 +16,11 @@ Systeme::Systeme()
 
 void Systeme::sysPushDoorButton(Door door)
 {
-	/*if (door.isElevatorPresent(_elevator.getFloor()) && (_elevator.getDirection() == 0)) {
+	if (door.isElevatorPresent(_elevator.getLevel()) && (_elevator.getdestination() == 0)) {
 		door.openDoor();
 		door.waitBeforeClose(5);
 		door.closeDoor();
-	}*/
+	}
 }
 
 void Systeme::addElevatorCall(User caller)

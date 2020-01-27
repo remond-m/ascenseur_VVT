@@ -32,7 +32,6 @@ void Door::waitBeforeClose(int delay)
 
 void Door::openDoor()
 {
-	//ask the elevator if it is stoped or not
 	_state_open = true;
 }
 

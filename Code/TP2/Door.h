@@ -1,3 +1,5 @@
+#include "Elevator.h"
+
 #pragma once
 class Door
 {
@@ -10,6 +12,7 @@ public:
 	void closeDoor();
 	bool isOpen();
 	void allowDeparture();
+
 	~Door();
 
 private:

@@ -2,10 +2,11 @@
 #include "User.h"
 #include "Door.h"
 #include "Systeme.h"
-
+#include "Elevator.h"
 
 User::User(int level, int destination)
 {
+
 	_level = level;
 	_call = false;
 	_destination = destination;
@@ -14,7 +15,6 @@ User::User(int level, int destination)
 void User::callElevator()
 {
 	_call = true;
-	//appel fonction ascenseur avec level et direction
 }
 
 void User::setDestination(int destination)

@@ -1,4 +1,8 @@
 #pragma once
+
+#include "Door.h"
+#include "Elevator.h"
+
 class User
 {
 public:
